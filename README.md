@@ -224,7 +224,8 @@ A custom VPC with a public and private subnet
 <img width="1920" height="1080" alt="Screenshot 2026-03-18 175018" src="https://github.com/user-attachments/assets/c0258cff-5f09-4486-8e46-665b37908f54" />
 
 EC2 Instance launched in the public subnet
-<img width="1920" height="1080" alt="Screenshot 2026-03-18 174748" src="https:p//github.com/user-attachments/assets/7493aa39-3610-4b7e-87a1-2b004d6a5c13" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-18 174748" src="https://github.com/user-attachments/assets/144a0138-495e-4f51-b6cf-20da9cc14580" />
+
 
 Nginx web server installed
 <img width="1920" height="1080" alt="Screenshot 2026-03-18 183124" src="https://github.com/user-attachments/assets/3245b935-b9bb-42d5-8da1-e6298bef3bf2" />
