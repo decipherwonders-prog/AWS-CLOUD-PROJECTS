@@ -1,4 +1,4 @@
-# AWS-CLOUD-PROJECTS
+# CLOUD ENGINEERING-PROJECT 1&2
  This repository contains two hands-on AWS cloud projects completed as part of my cloud engineering learning journey.
 
 PROJECT 1: High-Availability Static Website (Production-Oriented Design)
