@@ -17,6 +17,7 @@ I recently completed two hands-on AWS cloud projects focused on building and sec
    - Set up an S3 bucket to store website files.
    - Enabled versioning to keep track of changes.
    - Initially set the bucket to private to prevent unauthorized access.
+     
      <img width="1901" height="990" alt="Screenshot 2026-04-03 171102" src="https://github.com/user-attachments/assets/5ee19d05-b1bb-444c-ab2c-37e2d7475285" />
 
 2. **Upload Website Content**
