@@ -1,4 +1,4 @@
-# ☁️ Project Breakdown: Highly Available Nginx Server with SSL & Autoscaling
+#   Highly Available Nginx Server with SSL & Autoscaling
 
 This project was a hands-on journey to build a secure, highly available web server on AWS using Nginx, an SSL certificate, and Auto Scaling. The goal was to create a production-ready environment that could handle traffic spikes while keeping the site secure.
 
