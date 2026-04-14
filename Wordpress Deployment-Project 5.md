@@ -65,7 +65,7 @@ I added an Application Load Balancer and registered my EC2 instances.
 <img width="1783" height="832" alt="Screenshot 2026-04-07 141649" src="https://github.com/user-attachments/assets/40261265-7911-43a4-a741-cd1347972eb5" />
 
 **Lesson:**
-If your health checks are wrong, your entire system *looks* broken—even when it isn’t.
+If your health checks are wrong, your entire system *looks* broken, even when it isn’t.
 
 ---
 
@@ -125,6 +125,7 @@ server {
 What went wrong:
 
 Multiple WordPress directories caused confusion
+
 Unsure which directory Nginx was serving
 
 Fix:
@@ -205,11 +206,15 @@ Tested across browsers
 
 Everything remained consistent.
 
-Key Takeaways
-Distributed systems fail inconsistently
-Load balancers expose hidden issues
-Shared storage is critical
-Proxy layers must be handled carefully
+## Key Takeaways
+
+-Distributed systems fail inconsistently
+
+-Load balancers expose hidden issues
+
+-Shared storage is critical
+
+-Proxy layers must be handled carefully
 
 ## Achievements
 Multi-instance high availability
