@@ -4,7 +4,7 @@
 This project started as a simple goal:
  “Deploy WordPress on AWS.”
 
-It quickly turned into something much bigger—building a **distributed, highly available system** that actually behaves correctly under load.
+It quickly turned into something much bigger. Building a **distributed, highly available system** that actually behaves correctly under load.
 
 Instead of a single server, I ended up working with:
 - Multiple EC2 instances
