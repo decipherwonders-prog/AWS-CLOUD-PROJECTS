@@ -169,7 +169,8 @@ The fix was applied at the IAM level:
   sns:Publish
   ```
 * Scoped to the specific SNS topic ARN
-<img width="1920" height="1080" alt="Screenshot 2026-04-16 221632" src="https://github.com/user-attachments/assets/f8ceb5fa-45af-4a83-bc0d-23b85cd13b79" />
+<img width="1920" height="1017" alt="Screenshot 2026-04-16 221632" src="https://github.com/user-attachments/assets/fe5b6048-d8f3-4640-9147-ee8fcc07e40f" />
+
 
 ---
 
@@ -211,5 +212,5 @@ The system now operates as a **fully functional event-driven pipeline**
 
  Completed
  Fully functional
-✔ Debugged and production-stable architecture
-✔ Demonstrates real-world AWS integration and troubleshooting
+ Debugged and production-stable architecture
+ Demonstrates real-world AWS integration and troubleshooting
