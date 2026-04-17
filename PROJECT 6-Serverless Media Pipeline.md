@@ -210,7 +210,8 @@ The system now operates as a **fully functional event-driven pipeline**
 
 ## Project Status
 
- Completed
- Fully functional
- Debugged and production-stable architecture
- Demonstrates real-world AWS integration and troubleshooting
+ Completed:
+ 
+ Fully functional,
+  debugged and production-stable architecture, 
+  that demonstrates real-world AWS integration and troubleshooting.
