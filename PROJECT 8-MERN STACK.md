@@ -70,7 +70,7 @@ Core features:
 <img width="1343" height="940" alt="Screenshot 2026-04-25 164345" src="https://github.com/user-attachments/assets/aa5bbeb8-a1b7-4af9-933a-b9c2d7fdcb25" />
 <img width="1908" height="766" alt="Screenshot 2026-04-25 170424" src="https://github.com/user-attachments/assets/5e2806a5-9a4c-4df4-b0fb-0fbd72d87911" />
 <img width="1600" height="934" alt="Screenshot 2026-04-26 115547" src="https://github.com/user-attachments/assets/0d29e091-5b3d-41bc-a515-c62de5d2641e" />
-<img width="1677" height="1004" alt="Screenshot 2026-04-27 185644" src="https://github.com/user-attachments/assets/dbce457a-38a3-41c5-b7c1-f9ef7f42b49e" />
+<img width="1684" height="984" alt="Screenshot 2026-04-25 170509" src="https://github.com/user-attachments/assets/df102af0-d3df-4fcc-8ce9-d69f32309518" />
 
 ---
 
