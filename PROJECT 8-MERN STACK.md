@@ -345,12 +345,6 @@ Ports not exposed properly
  
 ---
 
-## Application fully accessible via:
-
-http://<ALB-DNS>
-
----
-
 ## Real Data Persistence
 * Tasks:
 * Created
