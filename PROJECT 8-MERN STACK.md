@@ -282,6 +282,151 @@ Without it:
 
 ---
 
+## EC2 Instance
+
+<img width="1870" height="1010" alt="Screenshot 2026-04-28 174731" src="https://github.com/user-attachments/assets/bc5d1c88-5eb6-4754-84da-ab8ecaa519c8" />
+
+* Hosts the Dockerized application
+<img width="1856" height="981" alt="Screenshot 2026-04-29 000030" src="https://github.com/user-attachments/assets/c522cf0a-256a-4a56-80d7-538114461dac" />
+<img width="1875" height="976" alt="Screenshot 2026-04-29 000045" src="https://github.com/user-attachments/assets/60cc300f-8ceb-41cd-86ba-f252d790e5f3" />
+
+* Registered as a target in the Target Group
+<img width="1864" height="1008" alt="Screenshot 2026-04-29 004115" src="https://github.com/user-attachments/assets/1df35247-52bb-4bfe-a285-516a1261a86c" />
+
+* Receives traffic only from ALB (after security hardening)
+<img width="1882" height="793" alt="Screenshot 2026-04-29 014107" src="https://github.com/user-attachments/assets/b31ce590-3202-46ed-be07-a95273e59497" />
+
+---
+
+## Security Groups
+ALB:
+Allows HTTP (80) from the internet
+<img width="1886" height="962" alt="Screenshot 2026-04-29 014147" src="https://github.com/user-attachments/assets/9364a051-72aa-420e-a882-f9cbab47d447" />
+
+---
+
+## EC2:
+Allows traffic only from ALB
+Blocks direct public access
+<img width="1887" height="998" alt="Screenshot 2026-04-29 014209" src="https://github.com/user-attachments/assets/21238efc-2649-4806-a701-72c1929d10ea" />
+
+---
+
+## Challenges Faced
+
+ ## 1. Port Mismatch (ALB → EC2)
+ALB forwarding to wrong port (80 instead of 3000)
+
+ Resulted in:
+502 Bad Gateway
+
+---
+
+## Fix:
+
+Corrected Target Group port to 3000
+
+---
+
+ ## 2. Security Group Misconfiguration
+Application worked internally but failed externally
+Root cause:
+Ports not exposed properly
+<img width="1665" height="912" alt="Screenshot 2026-04-29 000740" src="https://github.com/user-attachments/assets/7214591d-4c23-4a2c-a13f-c9e8ecca5387" />
+
+---
+
+## Lesson:
+
+“App not loading” is often a network problem, not a code problem
+
+## Successes
+ End-to-End Deployment
+ 
+---
+
+## Application fully accessible via:
+
+http://<ALB-DNS>
+
+---
+
+## Real Data Persistence
+* Tasks:
+* Created
+* Stored
+* Persist after refresh
+
+---
+
+## Proper Traffic Routing
+* ALB correctly distributing traffic to EC2
+* Health checks passing
+
+---
+  
+## Security Improvement
+* Removed direct public access to EC2
+* Enforced ALB-only access
+
+---
+
+## Containerized Consistency
+* Same app runs:
+* Locally
+<img width="1677" height="1004" alt="Screenshot 2026-04-27 185644" src="https://github.com/user-attachments/assets/30810c38-0b30-4a92-9121-888974ef5356" />
+
+* On EC2
+<img width="1873" height="1013" alt="Screenshot 2026-04-29 004302" src="https://github.com/user-attachments/assets/a22bb918-4f38-4099-9abc-c3c608f11be9" />
+
+---
+
+## Key Lessons Learned
+## 1. “It works” is not enough:
+
+A working UI ≠ working system
+
+---
+
+## 2. Networking is everything
+
+---
+
+## Most failures came from:
+
+* Ports
+* Security groups
+* Routing
+
+## Not code.
+
+---
+
+## 3. Containers simplify—but don’t eliminate complexity
+
+Docker solves environment issues, but introduces:
+
+* Networking layers
+* Service discovery concepts
+
+---
+  
+## 4. Cloud ≠ just hosting
+
+## Real cloud architecture involves:
+
+* Isolation
+* Load balancing
+* Traffic control
+
+---
+
+## This project exposed the need for:
+
+* CI/CD pipelines
+* Image registries (ECR)
+* Orchestration (ECS)
+  
 ##  Final Takeaway
 
 This project represents a shift in thinking:
